@@ -19,13 +19,22 @@ function App() {
   };
 
   return (
-    <div style={objStyles}>
-      <h1 className="text-3x1 text-red-600">Galleta de la Fortuna</h1>
-      <Phrase phraseSelected={phraseSelected} />
-      <BtnPhrase
-        setPhraseSelected={setPhraseSelected}
-        setBgSelected={setBgSelected}
-      />
+    <div
+      style={objStyles}
+      className="min-h-screen bg-cover bg-center flex justify-center items-center px-4"
+    >
+      <h1 className="absolute top-20 text-3xl uppercase font-black text-center drop-shadow-lg text-stroke-2 text-white">
+        Galleta de la Fortuna
+      </h1>
+      <article className="max-w-[400px] bg-white p-6 rounded-xl shadow-2xl">
+        <Phrase phraseSelected={phraseSelected} />
+      </article>
+      <footer className="absolute bottom-20">
+        <BtnPhrase
+          setPhraseSelected={setPhraseSelected}
+          setBgSelected={setBgSelected}
+        />
+      </footer>
     </div>
   );
 }

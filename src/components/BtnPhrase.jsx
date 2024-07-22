@@ -11,7 +11,7 @@ const BtnPhrase = ({ setPhraseSelected, setBgSelected }) => {
     setBgSelected(photos[getRandomNumbers(photos.length)]);
   };
 
-  return <button onClick={changePhrase}>Abrir otra</button>;
+  return <button className="hover:scale-125 transition-transform cursor-pointer ml-auto block bg-indigo-700 py-2 px-4 rounded-lg text-white" onClick={changePhrase}>Abrir otra</button>;
 };
 
 export default BtnPhrase;
